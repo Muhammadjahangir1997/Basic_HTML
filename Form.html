@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paractice</title>
+    <link rel="stylesheet" href="">
+<style>
+    .container{
+        background-color: darkgray;
+        padding: 20px ;
+        border: 30px solid black;
+    }
+    .botton{
+        width: 100%;
+        padding: 10px;
+        background-color: burlywood;
+        cursor: pointer;
+        margin:20px 0px;
+    }
+    body{
+        border: 20px solid grey;
+        margin: 30px solid black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 20px solid black;
+        color: black;
+    }
+    .h1{
+        text-align: center;
+    }
+   
+input[type="text"],input[type="email"],input[type="number"],[name="card"],textarea{
+    width: 100%;
+}
+.botton:hover{
+    background-color: darkred;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+    <form action="method">
+    <h1 class="h1">Payment form</h1>
+    <hr>
+<h2>Contect Information</h2>
+<p>Name*  <input type="text" name="name" required></p>
+<p>Address <textarea name="address" id="" cols="30" rows="5"></textarea></p>
+<p><input type="text">
+</p>
+   <fieldset>
+    <legend>Gender<legend>
+       <p>
+           male <input type="radio" name="gender" id="male" required>
+           femail <input type="radio" name="gender" id="femail" required>
+       </p>
+       
+    
+    </fieldset>
+
+    <p>Email <input type="email" name="email" id="email"></p>
+    <p>Postal code <input type="number" name="pincode" id="pincode"></p>
+    <h1>payment method</h1>
+    <hr>
+   <select name="card" id="card">
+       <option value="card">select type</option>
+       <option value="visa" required ></option>
+       <option value="visa">visa</option> <option value="visa">vesa</option> <option value="visa">vasa</option>
+   </select>
+
+   <button class="botton" >pay now</button>
+   <h5>Created by: Muhammad Jahangir</h5>
+   
+   
+</form>
+</div>
+</body>
+
+</html>
