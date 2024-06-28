@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        section{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            height: 500px;
+            width: 400px;
+            margin-top: 50px;
+            border: 1px solid white;
+            backdrop-filter: blur(5px);
+            border-radius: 5px;
+        }
+       h2{
+           text-align: center;
+           margin-top: 60px;
+           color: #fff;
+           font-size: 30px;
+       }
+       .input-box{
+           padding: 5px;
+           position: relative;
+           margin: 20px;
+           width: 300px;
+           border-bottom: 2px solid #fff;
+           
+       }
+    
+       .input-box label{
+           position: absolute;
+           left:30px;
+           top: 20px;
+           transform: translate(-45%);
+           font-size: 1em;
+           color: #fff;
+           pointer-events: none;
+           transform: 0.5s;
+
+       }
+       .input-box input{
+           width: 100%;
+           height: 50px;
+           background: transparent;
+           outline: none;
+           border: none;
+           padding: 0 35px 0 5px;
+           font-size: 1em;
+           color: #fff;
+       }
+       .forget{
+           margin: -15px;
+           font-size: 0.9em;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       .forget a{
+           right: 30px;
+           margin-left: 50px;
+           margin-top: 10px;
+           
+
+       }
+       button{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-top: 100px;
+          
+           width: 100%;
+           height: 50px;
+           border-radius: 40px;
+           outline: none;
+           border: none;
+           cursor: pointer;
+           font-size: 20px;
+       }
+       button:hover{
+        border: 2px solid black;
+       }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <form action="">
+            <h2>Log in</h2>
+            
+            <div class="input-box">
+            <input type="Email">
+             <label> Email</label>
+        </div>
+        <div class="input-box">
+            <input type="Name">
+          <label>  Password</label>
+        </div>
+        <div class="forget">
+        <input type="checkbox"> Remember
+        <a href="">Forget Password?</a>
+    </div>
+        <div class="button">
+        <button>
+            Login
+        </button>
+    </div>
+  
+        </form>
+    </section>
+    
+</body>
+</html>
